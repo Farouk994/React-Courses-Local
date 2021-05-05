@@ -1,12 +1,12 @@
 import "./App.css";
-import Courselist from "./Components/Courselist";
+import Courses from "./Components/Courses";
 import Header from "./Components/common/Header";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Courselist />
+      <Courses />
     </div>
   );
 }

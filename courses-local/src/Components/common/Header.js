@@ -6,7 +6,7 @@ function Header() {
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href=".">
-            Navbar w/ text
+            Home
           </a>
           <button
             class="navbar-toggler"
@@ -23,24 +23,25 @@ function Header() {
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href=".">
-                  Home
+                 Courses
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href=".">
-                  Features
+                <a class="nav-link active" href=".">
+                  About
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href=".">
+                <a class="nav-link active" href=".">
                   Pricing
                 </a>
               </li>
             </ul>
-            <span class="navbar-text">Navbar text with an inline element</span>
+            {/* <span class="navbar-text">Navbar text with an inline element</span> */}
           </div>
         </div>
       </nav>
+      <br></br>
     </div>
   );
 }
