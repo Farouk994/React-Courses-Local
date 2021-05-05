@@ -1,15 +1,19 @@
 import React from "react";
+import { NavLink } from "react-router-dom"
 
 function Header() {
+  const activeStyle = {
+    color : "orange"
+  }
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href=".">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid">
+          <NavLink activeStyle={activeStyle} className="navbar-brand" exact to="/">
             Home
-          </a>
+          </NavLink>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarText"
@@ -17,31 +21,30 @@ function Header() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href=".">
+          <div className="collapse navbar-collapse" id="navbarText">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <NavLink activeStyle={activeStyle} className="nav-link active" aria-current="page" to="/Courses">
                  Courses
-                </a>
+                </NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href=".">
+              <li className="nav-item">
+                <NavLink activeStyle={activeStyle} className="nav-link active" to="/About">
                   About
-                </a>
+                </NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href=".">
+              <li className="nav-item">
+                <NavLink activeStyle={activeStyle} className="nav-link active" to="/Pricing">
                   Pricing
-                </a>
+                </NavLink>
               </li>
             </ul>
-            {/* <span class="navbar-text">Navbar text with an inline element</span> */}
+            {/* <span className="navbar-text">Navbar text with an inline element</span> */}
           </div>
         </div>
       </nav>
-      <br></br>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Courselist from "./Courselist";
-import { courses } from "../tools/mockData";
+import Courselist from "../Courselist";
+import { courses } from "../../tools/mockData";
 console.log(courses);
 function Courses() {
   const [course, setCourse] = useState([]);
